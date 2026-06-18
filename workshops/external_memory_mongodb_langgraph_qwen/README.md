@@ -1,6 +1,6 @@
 # External Memory for AI Applications
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](<add Colab URL>)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ro-witthawin/ro-witthawin-workshop/blob/main/workshops/external_memory_mongodb_langgraph_qwen/external_memory_mongodb_langgraph_qwen.ipynb)
 
 Workshop notebook for `Virtual Thailand MUG: June 2026 Comunity Online Meetup`
 
