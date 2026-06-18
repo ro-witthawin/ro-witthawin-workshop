@@ -11,6 +11,16 @@ Whether you are prototyping your first RAG pipeline, deploying a local model ser
 | Topic | Tech Stack | Resource Link |
 | --- | --- | --- |
 | External Memory for Local Agents with MongoDB and Qwen | LangGraph, OpenAI, MongoDB, Qwen | [Materials](./workshops/external_memory_mongodb_langgraph_qwen/) |
+| Video Summarization with ASR and Visual Understanding | ASR, Computer Vision, Video Summarization | [Repository](https://github.com/ro-witthawin/videoSummarizationWithASRandVisual) |
+| Best Practices for Building Graph-based RAG from Multiple Documents with Python | Graph RAG, LLMs, Document Processing | [Repository](https://github.com/ro-witthawin/Best-Practices-for-Building-Graph-based-RAG-From-Multiple-Documents-With-Python) |
+| YDP 2025: Behind Every AI, The Story of Data | Data Engineering, AI Fundamentals, Analytics | [Repository](https://github.com/ro-witthawin/YDP2025-Behind-Every-AI-The-Story-of-Data) |
+| Basic Agent MCP | MCP, Agentic AI | [Repository](https://github.com/ro-witthawin/Basic-Agent-MCP) |
+| Basic Python for Data Science and AI | Python, NumPy, pandas, Machine Learning Basics | [Repository](https://github.com/ro-witthawin/Basic-Python-for-DS-AI) |
+| Evolution of Gemma 3n for Deploying Local Models on Every Device | Gemma 3n, Local LLMs, Edge AI, Deployment | [Repository](https://github.com/ro-witthawin/Evolution-of-Gemma3n-For-Deploying-local-models-on-every-device) |
+| R2GAI LINE x Gemini LangGraph | LINE, Gemini, LangGraph, Agentic AI | [Repository](https://github.com/ro-witthawin/r2gai-line-x-gemini-langGraph) |
+| BU Deep Reinforcement Learning | PyTorch, Reinforcement Learning | [Repository](https://github.com/ro-witthawin/BU-DeepReinforcementLearning) |
+| Multimodal RAG for Images and Text with MongoDB | MongoDB, Multimodal RAG, Image Embeddings, LLMs | [Repository](https://github.com/ro-witthawin/Multimodal-RAG-for-Images-and-Text-with-MongoDB) |
+| SuperAI Docker 101 | Docker, Containers, AI Development Environments | [Repository](https://github.com/ro-witthawin/superai-docker101) |
 
 ## Repository Structure
 
