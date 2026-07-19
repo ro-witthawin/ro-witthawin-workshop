@@ -1,0 +1,5 @@
+torch
+accelerate
+transformers>=5.11.0
+ipython
+jupyter

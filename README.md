@@ -10,6 +10,7 @@ Whether you are prototyping your first RAG pipeline, deploying a local model ser
 
 | Topic | Tech Stack | Resource Link |
 | --- | --- | --- |
+| DiffusionGemma Workshop | DiffusionGemma, Transformers, Diffusion LLMs | [Materials](./workshops/DiffusionGemma/) |
 | External Memory for Local Agents with MongoDB and Qwen | LangGraph, OpenAI, MongoDB, Qwen | [Materials](./workshops/external_memory_mongodb_langgraph_qwen/) |
 | Video Summarization with ASR and Visual Understanding | ASR, Computer Vision, Video Summarization | [Repository](https://github.com/ro-witthawin/videoSummarizationWithASRandVisual) |
 | Best Practices for Building Graph-based RAG from Multiple Documents with Python | Graph RAG, LLMs, Document Processing | [Repository](https://github.com/ro-witthawin/Best-Practices-for-Building-Graph-based-RAG-From-Multiple-Documents-With-Python) |
