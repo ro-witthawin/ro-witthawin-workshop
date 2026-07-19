@@ -23,7 +23,7 @@ The notebook demonstrates how to:
 ## Main Stack
 
 - Model: `google/diffusiongemma-26B-A4B-it`
-- Runtime: Python 3.12 notebook environment
+- Runtime: Python 3.12 notebook environment recommended
 - Core library: `transformers`
 - Notebook display: `IPython.display`
 - Recommended environment: Google Colab or a local GPU workstation with sufficient memory
@@ -40,7 +40,7 @@ Runtime -> Change runtime type -> Hardware accelerator -> GPU
 3. Install or upgrade the notebook dependencies if your runtime does not already include a Transformers version with DiffusionGemma support:
 
 ```python
-%pip install -U torch "transformers>=5.11.0" accelerate
+%pip install -U torch torchvision "transformers>=5.11.0" accelerate pillow
 ```
 
 4. Run the notebook cells from top to bottom.
@@ -51,7 +51,7 @@ Runtime -> Change runtime type -> Hardware accelerator -> GPU
 Create and activate a virtual environment:
 
 ```bash
-python -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
 ```
 
@@ -76,11 +76,12 @@ Run the notebook sections in order:
 1. Import `DiffusionGemmaForBlockDiffusion` and `AutoProcessor`.
 2. Set `MODEL_ID` to `google/diffusiongemma-26B-A4B-it`.
 3. Load the processor and model with automatic dtype and device placement.
-4. Define a chat prompt.
-5. Apply the chat template and move tensors to the model device.
-6. Create `LiveDiffusionStreamer` to display intermediate draft steps.
-7. Generate up to `4096` new tokens with the streamer enabled.
-8. Decode the output and render the final result as Markdown.
+4. Run the model-shape sanity check.
+5. Define a chat prompt.
+6. Apply the chat template and move tensors to the model device.
+7. Create `LiveDiffusionStreamer` to display intermediate draft steps.
+8. Generate up to `512` new tokens with the streamer enabled.
+9. Decode the output and render the final result as Markdown.
 
 ## Prompt Example
 
@@ -130,6 +131,18 @@ output = model.generate(
     streamer=streamer,
 )
 ```
+
+### `RuntimeError: shape '[1, ..., -1, 256]' is invalid`
+
+This can happen when the model is loaded with an incompatible or inconsistent Python/package environment. Use Python 3.12, reinstall the workshop requirements, restart the notebook kernel, and rerun the notebook from the top:
+
+```bash
+python3.12 -m venv .venv
+source .venv/bin/activate
+pip install -r workshops/DiffusionGemma/requirements.txt
+```
+
+The notebook includes a model-shape sanity check after loading. If that cell fails, recreate the environment before running `model.generate`.
 
 ### Slow first run
 
